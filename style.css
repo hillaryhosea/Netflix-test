@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    font-family: 'Helvetica Neue',Helvetica,Arial, sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('images/1_5lyavS59mazOFnb55Z6znQ.png');
+    height: 100vh;
+}
+
+ nav img {
+     width: 300px;
+     height: 150px;
+     vertical-align: middle;
+   
+}
+
+nav a.logo {
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 3%;
+}
+
+header nav {
+    height: 90px;
+}
+
+nav .signin {
+    color: #fff;
+    float: right;
+    background-color: #e50914;
+    line-height: normal;
+    margin-top: 18px;
+    margin-right: 3%;
+    padding: 7px 17px;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.pitch {
+    margin: 0 3%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.8vw;
+}
+
+.pitch_title {
+    font-size: 3em;
+    margin: 0 0 0.2em;
+    font-weight: 700;
+}
+
+.pitch_subtitle {
+    margin: 0 0.5em;
+}
+
+.btn {
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    margin: .9em .5em .5em 0;
+    padding: 12px 2em;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align:middle;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    text-align:center;
+    border: 0;
+}
+
+nav .signin:hover, .btn:hover {
+    background-color: #f40612;
+}
+
+#features > nav {
+    padding-top: 35px;
+    background-color: #141414;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+#features > nav a {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    color: #777;
+    height: 125px;
+    line-height: 20px;
+}
+
+#features > nav  a:hover {
+    color: #fff;
+}
+/* #features > nav .column img:hover {
+    color: #fff;
+} */
+
+/* #features > nav a img {
+    height: 150px;
+} */
+
+#features > nav a h2 {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.size-80 {
+    width: 80%;
+}
