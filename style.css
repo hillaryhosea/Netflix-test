@@ -97,20 +97,20 @@ nav .signin:hover, .btn:hover {
     vertical-align: top;
     font-weight: bold;
     color: #777;
-    height: 125px;
+    height: 225px;
     line-height: 20px;
 }
 
 #features > nav  a:hover {
     color: #fff;
 }
-/* #features > nav .column img:hover {
+#features > nav .column img:hover {
     color: #fff;
-} */
+}
 
-/* #features > nav a img {
+#features > nav a img {
     height: 150px;
-} */
+}
 
 #features > nav a h2 {
     margin: 10px 0 0;
@@ -134,4 +134,19 @@ nav .signin:hover, .btn:hover {
 
 .size-80 {
     width: 80%;
+}
+
+#features > article > section {
+     display: none;
+     padding: 0 40px;
+     text-align: center;
+}
+
+#features > nav a.is-selected {
+    border-bottom: solid 7px red;
+    color: white;
+}
+
+#features > article > section.is-selected {
+    display: block;
 }

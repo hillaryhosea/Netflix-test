@@ -23,30 +23,43 @@
 
         <div id="features">
             <nav>
-                <div class="center columns size-80">
-                 <a href="#" class="column">
+                <div class="center columns size-80" >
+                 <a href="#" class="column is-selected"  data-id="comitments">
                     <img alt="cancel anytime" src="images/commit.png">
                     <h2>
-                        No commitments
+                        No comitments
                         <br>
                         cancel online at anytime 
                     </h2>
                  </a>
-                 <a href="#"class="column">
+                 <a href="#"class="column" data-id="watchAnywhere">
                     <img alt="watch anywhere" src="images/watch.png">
                     <h2>
                       Watch anywhere
                     </h2>
                  </a>
-                 <a href="#"class="column">
+                 <a href="#"class="column" data-id="PickPrice">
                     <img alt="Pick your price" src="images/price tag 3.jpg">
                     <h2>
                        Pick your price
                     </h2>
                  </a>
                 </div>
+
+                <article>
+                    <section class="is-selected" data-id="comitments">
+                        about feature1
+                    </section>
+                    <section data-id="watchAnywhere">
+                        about feature2
+                    </section>
+                    <section data-id="PickPrice">
+                        about feature3
+                    </section>
+                </article>
             </nav>
         </div>
+        <script src="main.js" charset="UTF-8"></script>
     </body>
 
 </html>
