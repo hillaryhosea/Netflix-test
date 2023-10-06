@@ -1,68 +1,31 @@
+const tabs = document.querySelectorAll("#features > nav a");
+ const tabsContent = document.querySelectorAll("article > section ");
+ 
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    e.preventDefault();
 
-document.addEventListener("DOMContentLoaded", function(){
-   
-        var navLinks = document.querySelectorAll("#features a ");
+    tabs.forEach((tab) => {
+      tab.classList.remove("is-selected");
+    });
 
-        var sections =  document.querySelectorAll("#features  article  section ");
+    tab.classList.add("is-selected");
 
-        navLinks.forEach(function(link){
+    tabsContent.forEach((section) => {
+      section.classList.remove("is-selected");
+    });
 
-            link.addEventListener("click", function(e) {
+    tabsContent.forEach(function (section) {
+      if (section.dataset.id === that.dataset.id) {
+        section.classList.add("is-selected");
+      }
+    });
 
-                e.preventDefault();
-
-                var tergetDataId = this.getAttribute("data");
-
-                sections.forEach(function (section) {
-
-                    section.style.display = "none";
-
-                })
-
-                var targetsection = document.querySelectorAll()
-
-            });
-        });
+  //   const selectedTabId = tab.dataset.id;
+  //   const selectedTabContent = document.querySelector(`#features > article section[data-id="${selectedTabId}"]`);
+  //   selectedTabContent.classList.add("is-selected");
+  });
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Get all <a> elements within the navigation
-//     var navLinks = document.querySelectorAll('#features a');
-
-//     // Get all <section> elements within the article
-//     var articleSections = document.querySelectorAll('#features article section');
-
-//     // Add click event listeners to each <a> element
-//     navLinks.forEach(function (link) {
-//         link.addEventListener('click', function (event) {
-//             event.preventDefault(); // Prevent default link behavior
-
-//             // Get the data-id attribute value of the clicked <a> element
-//             var targetDataId = this.getAttribute('data-id');
-
-//             // Hide all article sections
-//             articleSections.forEach(function (section) {
-//                 section.style.display = 'none';
-//             });
-
-//             // Show the article section with the matching data-id
-//             var targetSection = document.querySelector('#features article section[data-id="' + targetDataId + '"]');
-//             if (targetSection) {
-//                 targetSection.style.display = 'block';
-//             }
-//         });
-//     });
-// });
-
-
-
-
-
-
-
-
-
-
 
 
 // $(function() {
