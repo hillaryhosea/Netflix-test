@@ -81,6 +81,10 @@ nav .signin {
     border: 0;
 }
 
+.btn-large {
+    padding: 18px 20px;
+}
+
 nav .signin:hover, .btn:hover {
     background-color: #f40612;
 }
@@ -117,6 +121,12 @@ nav .signin:hover, .btn:hover {
     font-size: 1em;
 }
 
+#features > article {
+    margin-bottom: 120px;
+}
+
+
+
 .columns {
     display: flex;
 }
@@ -128,25 +138,67 @@ nav .signin:hover, .btn:hover {
     flex-shrink: 1;
 }
 
+.column.is-narrow {
+    flex: none;
+}
+
 .center {
     margin: 0 auto;
+}
+
+.size-90 {
+    width: 90%;
 }
 
 .size-80 {
     width: 80%;
 }
 
-#features > article > section {
-     display: none;
-     padding: 0 40px;
-     text-align: center;
+.size-70 {
+    width: 70%;
 }
 
-#features > nav a.is-selected {
+.text-center {
+    text-align: center;
+}
+
+ nav a.is-selected {
     border-bottom: solid 7px red;
     color: white;
 }
 
-#features > article > section.is-selected {
-    display: block;
+article > section {
+    /* color: red; */
+    display: none;
+    padding: 40px 0;
 }
+
+
+article > section.is-selected {
+    display: block;
+    align-content: center;
+}
+
+#features article h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: gopx 0 20px;
+}
+
+#features img {
+    max-width: 100%;
+  
+}
+
+#features #watchanywhere h2 {
+    font-size: 19px;
+    padding-right: 1em;
+    margin: 0 0 20px ;
+}
+
+#features #watchanywhere > div:first-child{
+    margin-bottom: 60px;
+}
+
+ 
+  
