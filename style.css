@@ -1,204 +1,83 @@
+
 html, body {
     margin: 0;
-    font-family: 'Helvetica Neue',Helvetica,Arial, sans-serif;
-    color: white;
+    font-weight: 20px;
     background-color: black;
-    font-size: 20px;
+    color: white;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
 header {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('images/1_5lyavS59mazOFnb55Z6znQ.png');
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("images/1_5lyavS59mazOFnb55Z6znQ.png") ;
     height: 100vh;
 }
 
- nav img {
-     width: 300px;
-     height: 150px;
-     vertical-align: middle;
-   
+header > div > img {
+    width: 15%;
+    margin: 10px 0 0  10%;
 }
 
-nav a.logo {
-    display: inline-block;
-    line-height: 90px;
-    margin-left: 3%;
-}
-
-header nav {
-    height: 90px;
-}
-
-nav .signin {
-    color: #fff;
-    float: right;
-    background-color: #e50914;
-    line-height: normal;
-    margin-top: 18px;
-    margin-right: 3%;
-    padding: 7px 17px;
-    font-weight: 400;
-    border-radius: 4px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.pitch {
-    margin: 0 3%;
-    position: absolute;
-    top: 35%;
-    font-size: 1.8vw;
-}
-
-.pitch_title {
-    font-size: 3em;
-    margin: 0 0 0.2em;
-    font-weight: 700;
-}
-
-.pitch_subtitle {
-    margin: 0 0.5em;
-}
-
-.btn {
-    color: #fff;
-    background-color: #e50914;
-    border-radius: 3px;
-    margin: .9em .5em .5em 0;
-    padding: 12px 2em;
-    font-size: 15px;
-    letter-spacing: 3px;
-    font-weight: 400;
-    cursor: pointer;
-    text-decoration: none;
-    vertical-align:middle;
-    font-family: Arial, sans-serif;
-    user-select: none;
-    text-align:center;
-    border: 0;
-}
-
-.btn-large {
-    padding: 18px 20px;
-}
-
-nav .signin:hover, .btn:hover {
-    background-color: #f40612;
-}
-
-#features > nav {
-    padding-top: 35px;
-    background-color: #141414;
-    border-bottom: 2px solid #3d3d3d;
-}
-
-#features > nav a {
-    text-decoration: none;
-    text-align: center;
-    vertical-align: top;
-    font-weight: bold;
-    color: #777;
-    height: 225px;
-    line-height: 20px;
-}
-
-#features > nav  a:hover {
-    color: #fff;
-}
-#features > nav .column img:hover {
-    color: #fff;
-}
-
-#features > nav a img {
-    height: 150px;
-}
-
-#features > nav a h2 {
-    margin: 10px 0 0;
-    font-size: 1em;
-}
-
-#features > article {
-    margin-bottom: 120px;
-}
-
-
-
-.columns {
-    display: flex;
-}
-
-.column {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.column.is-narrow {
-    flex: none;
-}
-
-.center {
-    margin: 0 auto;
-}
-
-.size-90 {
-    width: 90%;
-}
-
-.size-80 {
-    width: 80%;
-}
-
-.size-70 {
-    width: 70%;
-}
-
-.text-center {
-    text-align: center;
-}
-
- nav a.is-selected {
-    border-bottom: solid 7px red;
+header > div > button {
+    background-color: red;
     color: white;
+    float: right;
+    padding: 10px;
+    border-radius: 8px;
+    width: 5%;
+    margin: 2% 8% 0 0 ;
+    font-weight: bold;
+    cursor: pointer;
+    /* box-shadow: 1px 2px black ; */
 }
 
-article > section {
-    /* color: red; */
-    display: none;
-    padding: 40px 0;
+header > div > button:hover {
+    background-color: rgb(150, 7, 7);
+    transition: all 0.5s ease-in-out;
+}
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    margin: 5%;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; */
 }
 
 
-article > section.is-selected {
-    display: block;
-    align-content: center;
+form > input[type="email"] {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 4rem;
+    width: 28%;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: none;
+
 }
 
-#features article h2 {
-    font-size: 32px;
-    font-weight: 400;
-    margin: gopx 0 20px;
-}
-
-#features img {
-    max-width: 100%;
+ form > input[type="email"]:focus {
+    transform: translate(-2%, -5%);
+    transition: 1s;
+  }
   
+form > button[type="submit"]{
+    background-color: red;
+    height: 4rem;
+    border-radius: 5px;
+    width: 15%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-#features #watchanywhere h2 {
-    font-size: 19px;
-    padding-right: 1em;
-    margin: 0 0 20px ;
+form > button[type="submit"]:hover{
+    background-color: rgb(150, 7, 7);
+    transition: all 0.5s ease-in-out;
 }
 
-#features #watchanywhere > div:first-child{
-    margin-bottom: 60px;
-}
-
- 
   
+

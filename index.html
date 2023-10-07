@@ -1,100 +1,38 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Netflix spain- watch tv show online, watch movies online </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/Netflix_icon.svg.png">
-    </head>
-    <body>
-        <header>
-            <nav> 
-                <a class="logo" href="#">
-                    <img src="images/logo.png" alt="Netflix logo">
-                </a>
-                <a class="signin" href="https://www.Netflix.com/login">Sign In</a>
-            </nav>
-           <section class="pitch">
-            <h1 class="pitch_title">See what's next.</h1>
-            <p class="pitch_subtitle">WHATCH ANYWHERE. CANCEL ANYTIME.</p>
-            <button class="btn">JOIN FREE FOR A MONTH.</button>
-           </section>
-        </header>
-
-        <div id="features">
-            <nav>
-                <div class="center columns size-80" >
-                 <a href="#" class="column is-selected"  data-id="comitments">
-                    <img alt="cancel anytime" src="images/commit.png">
-                    <h2>
-                        No comitments
-                        <br>
-                        cancel online at anytime 
-                    </h2>
-                 </a>
-                 <a href="#"class="column" data-id="watchAnywhere">
-                    <img alt="watch anywhere" src="images/watch.png">
-                    <h2>
-                      Watch anywhere
-                    </h2>
-                 </a>
-                 <a href="#"class="column" data-id="PickPrice">
-                    <img alt="Pick your price" src="images/price tag 3.jpg">
-                    <h2>
-                       Pick your price
-                    </h2>
-                 </a>
-                </div>
-
-                <article >
-                    <section class="is-selected  size-70" data-id="comitments">
-                        <div class="columns">
-                            <div class="column">
-                                <h2>
-                                    if you decide Netflix isn't for you - no problem. no commitment cancel anytime
-                                </h2>
-                                <button class="btn  btn-larg">join for a free month</button>
-                            </div>
-                            <div class="column">
-                                <img src="images/section1.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                    <section data-id="watchAnywhere" class="center size-80" id="watchAnywhere">
-                         <div class="columns center" >
-                            <h2 class="column">
-                                watch tTv show and movies anytime, anywhere - personalized for 
-                            </h2>
-                            <button class="btn btn-larg column is-narrow">Join free for three months</button>
-                         </div>
-
-                         <div class="columns size-90 center">
-                            <div class="column text-center">
-                                <img src="" alt="tv ui">
-                                <h3>watch on your tv</h3>
-                                <p>smart tvs, playstation, xbox, chromecast</p>
-                            </div>
-
-                            <div  class="column text-center">
-                                <img src="" alt="mobile tablet">
-                                <h3>watch intsantly or download for later</h3>
-                                <p> availabe on phone and tablet, werever you go</p>
-                            </div>
-
-                            <div class="column text-center">
-                                <img src="" alt="webdite">
-                                <h3>use a computer</h3>
-                                <p>watch right on Netflix.com</p>
-                            </div>
-                         </div>
-                    </section>
-                    <section data-id="PickPrice">
-                        about feature3
-                    </section>
-                </article>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Netflix_icon.svg.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="LOGO">
+            <button type="submit" >sign in</button>
         </div>
-        <script src="main.js" charset="UTF-8"></script>
-    </body>
-
-</html>
+        <div class="header">
+            <div >
+                <h1>Ultimate movies, TV shows, and more</h1>
+                <p>Watch anywhere. Cancel anytime</p>
+            </div>
+    
+            <div>
+                <h5>
+                    Ready to watch? Enter your email to create or restart your membership.
+                </h5>
+                <form action="\submit-form" method="post">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">Get Stared > </button>
+                </form>
+            </div>
+        </div>
+        
+    </header>
+   
+    <script src="main.js" charset="UTF-8"></script>
+</body>
+</html> 
